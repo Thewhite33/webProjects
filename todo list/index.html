@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-[100] min-h-[100vh] p-6" id="container">
+        <div class="w-[100%] max-w-[540px] bg-white m-[100px_auto_20px] p-[40px_30px_70px] rounded-[10px]">
+            <h2 class="text-[#002765] flex items-center mb-5">Todo List <img src="icon.png" class="w-[30px] ml-[10px]"></h2>
+            <div class="flex items-center justify-between rounded-[30px] bg-[#edeef0] pl-[20px] mb-[25px]">
+                <input type="text" id="inputBox" placeholder="Add your Task" class="flex-1 border-none outline-none bg-transparent pt-[10px] font-extralight">
+                <button class="border-none outline-none p-[16px_50px] bg-[#ff5945] text-white cursor-pointer rounded-[40px]" onclick="checkInput()">Add</button>
+            </div>
+            <ul id="lst-container">
+                <!-- <li class="checked">Task 1</li>
+                <li class="checked">Task 2</li>
+                <li class="checked">Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

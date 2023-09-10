@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    background: rgb(17,203,242);
+background: linear-gradient(90deg, rgba(17,203,242,1) 0%, rgba(14,215,203,1) 47%, rgba(24,157,152,1) 78%);
+}
+html{
+    font-size: 16px;
+}
+.wrapper{
+    /* This part allows the content to be in exact centre */
+    position: absolute;
+    transform: translate(-50%,-50%);
+    /* horizontally and vertically center an element within its parent container   */
+    top: 50%;
+    left: 50%;
+}
+.container{
+    /* v min means oercentage of screen resolution for eg if the viewport is 1000px wide and 800px high, if we set the width of an element to 30vmin , it will be 30% of the height. */
+    height: 70vmin;
+    width: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+.button-option{
+    background: rgb(255, 255, 255);
+    height: 22vmin;
+    width:22vmin;
+    border: none;
+    border-radius: 10px;
+    font-size: 12vmin;
+    color: rgb(17,203,242);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#restart{
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+}
+.popup{
+    background: linear-gradient(90deg, rgba(17,203,242,1) 0%, rgba(14,215,203,1) 47%, rgba(24,157,152,1) 78%);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+}
+#new-game{
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+}
+#message{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1em;
+}
+.popup{
+    display: none;
+}
